@@ -4,12 +4,16 @@ class PostsController < ApplicationController
 	
 
 	def index
-		@post = Post.all.order("created_at DESC")
+		# @posts = Post.all.order("created_at DESC")
+		# binding.pry
+		# @post = Post.all.order(:cached_votes_up => :desc)
+		@posts = Post.all
 	end
 
 	def show
 		@post = Post.find(params[:id])
 		@comments = Comment.where(post_id: @post)
+		@random_post = Post.where.not(id: @post).order("RANDOM()").first
 	end
 
 	def new

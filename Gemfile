@@ -59,5 +59,7 @@ group :development, :test do
 
   # Better Errors
   gem "better_errors"
+
+  gem 'rails_12factor'
 end
 

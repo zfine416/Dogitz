@@ -1,18 +1,21 @@
-<h2>Sign up</h2>
+<div class="sign-up">
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
-   <%= f.input :name, required: true, autofocus: true %>
-    <%= f.input :email, required: true%>
-    <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
-    <%= f.input :password_confirmation, required: true %>
+  <h1 class="sign-up-title">Sign Up</h1>
+   <%= f.input :name, label: false, :placeholder => "Name", required: true, autofocus: true, :html => {:class => "sign-up-input"} %>
+    <%= f.input :email, label: false, :placeholder => "Email",required: true, :html => {:class => "sign-up-input"}%>
+    <%= f.input :password,  label: false, :placeholder => "Password (8 characters minimum)", required: true, :html => {:class => "sign-up-input"} %>
+    <%= f.input :password_confirmation,  label: false, :placeholder => "Password Confirmation",required: true, :html => {:class => "sign-up-input"} %>
   </div>
+  <!-- , hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) -->
 
   <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
+    <%= f.button :submit, "Sign up", :class => "sign-up-button" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>

@@ -61,8 +61,8 @@ class PostsController < ApplicationController
 	def find_post
 		@post = Post.find(params[:id])
 	end
-
+	# strong parameters
 	def post_params
-		params.require(:post).permit(:title, :link, :description, :image)
+		params.require(:post).permit(:title, :instagram, :description, :image)
 	end
 end

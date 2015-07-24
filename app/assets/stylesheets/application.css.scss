@@ -6,6 +6,12 @@
 $primary: #4DBD33;
 $secondary: #fff;
 
+*{
+  margin:0;
+  padding:0;
+  border:0;
+}
+
 body {
 	font-family: 'Hammersmith One', sans-serif;;
 	font-weight: 100;

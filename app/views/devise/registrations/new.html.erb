@@ -1,11 +1,12 @@
 <div class="sign-up">
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= f.error_notification %>
+  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  
 
   <div class="form-inputs">
-  <h1 class="sign-up-title">Sign Up</h1>
-   <%= f.input :name, label: false, :placeholder => "Name", required: true, autofocus: true, :html => {:class => "sign-up-input"} %>
+    <h1 class="sign-up-title">Sign Up</h1>
+    <%= f.error_notification %>
+    <%= f.input :name, label: false, :placeholder => "Name", required: true, autofocus: true, :html => {:class => "sign-up-input"} %>
     <%= f.input :email, label: false, :placeholder => "Email",required: true, :html => {:class => "sign-up-input"}%>
     <%= f.input :password,  label: false, :placeholder => "Password (8 characters minimum)", required: true, :html => {:class => "sign-up-input"} %>
     <%= f.input :password_confirmation,  label: false, :placeholder => "Password Confirmation",required: true, :html => {:class => "sign-up-input"} %>
@@ -15,7 +16,7 @@
   <div class="form-actions">
     <%= f.button :submit, "Sign up", :class => "sign-up-button" %>
   </div>
-<% end %>
+  <% end %>
 
 
 </div>

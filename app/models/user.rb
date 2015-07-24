@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
   :recoverable, :rememberable, :trackable, :validatable
 
-  validates :email, :email => true
+  validates :my_email_attribute, :email => {:strict_mode => true}
 
   has_many :posts
   has_many :comments

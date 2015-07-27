@@ -63,6 +63,6 @@ class PostsController < ApplicationController
 	end
 	# strong parameters
 	def post_params
-		params.require(:post).permit(:title, :instagram, :description, :image)
+		params.require(:post).permit(:title, :instagram, :description, :image  => params[:image])
 	end
 end

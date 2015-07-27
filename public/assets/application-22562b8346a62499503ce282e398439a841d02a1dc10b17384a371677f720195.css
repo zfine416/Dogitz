@@ -1,0 +1,499 @@
+/*
+
+ */
+@import url(https://fonts.googleapis.com/css?family=Hammersmith+One);
+/* line 10, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 16, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+body {
+  font-family: 'Hammersmith One', sans-serif;
+  font-weight: 100;
+}
+
+/* line 21, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
+
+/* line 25, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 30, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 35, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 39, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+.button {
+  border: 1px solid #9B9B9B;
+  padding: .7rem 1.25rem;
+  border-radius: .3rem;
+  outline: none;
+  background: white;
+  color: #9B9B9B;
+}
+
+/* line 48, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+header {
+  width: 100%;
+  padding: 2rem 0;
+  border-bottom: 1px solid #E4E4E4;
+  background: #4DBD33;
+  font-family: 'Hammersmith One', sans-serif;
+}
+/* line 54, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+header #logo {
+  float: left;
+  font-size: 1.75rem;
+}
+/* line 57, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+header #logo a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 1s;
+}
+/* line 61, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+header #logo a:hover {
+  color: #FFF;
+}
+/* line 66, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+header nav {
+  float: right;
+}
+/* line 68, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+header nav a {
+  font-family: 'Hammersmith One', sans-serif;
+  margin-left: 1.5rem;
+  line-height: 2;
+  color: #fff;
+  text-decoration: none;
+  transition: color 1s;
+}
+/* line 75, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+header nav a:hover {
+  color: #FFF;
+}
+
+/*Form styling*/
+/* line 83, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+.sign-up {
+  position: relative;
+  margin: 20px auto;
+  width: 280px;
+  padding: 33px 25px 29px;
+  background: white;
+  border-bottom: 1px solid #c4c4c4;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* line 95, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+.sign-up:before, .sign-up:after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: inherit;
+  border-bottom: 1px solid #d2d2d2;
+  border-radius: 4px;
+}
+
+/* line 107, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+.sign-up:after {
+  bottom: 3px;
+  border-color: #dcdcdc;
+}
+
+/* line 112, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+.sign-up-title {
+  margin: -25px -25px 25px;
+  padding: 15px 25px;
+  line-height: 35px;
+  font-size: 26px;
+  font-weight: 300;
+  color: #4DBD33;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+  background: #f7f7f7;
+}
+
+/* line 124, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+.sign-up-title:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: #c4e17f;
+  border-radius: 5px 5px 0 0;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+
+/* line 139, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+input {
+  font-family: inherit;
+  color: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 147, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+.form-inputs input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+  padding: 0 15px 2px;
+  font-size: 17px;
+  background: white;
+  border: 2px solid #ebebeb;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 -2px #ebebeb;
+  box-shadow: inset 0 -2px #ebebeb;
+}
+
+/* line 160, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+.sign-up-input:focus {
+  border-color: #62c2e4;
+  outline: none;
+  -webkit-box-shadow: inset 0 -2px #62c2e4;
+  box-shadow: inset 0 -2px #62c2e4;
+}
+
+/* line 167, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+.lt-ie9 .sign-up-input {
+  line-height: 48px;
+}
+
+/* line 171, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+.sign-up-button {
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  height: 54px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #4DBD33;
+  border: 0;
+  border-bottom: 2px solid #2e711e;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #2e711e;
+  box-shadow: inset 0 -2px #2e711e;
+}
+
+/* line 190, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+.sign-up-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 197, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+:-moz-placeholder {
+  color: #ccc;
+  font-weight: 300;
+}
+
+/* line 202, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+  font-weight: 300;
+}
+
+/* line 208, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+::-webkit-input-placeholder {
+  color: #ccc;
+  font-weight: 300;
+}
+
+/* line 213, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+:-ms-input-placeholder {
+  color: #ccc;
+  font-weight: 300;
+}
+
+/* line 218, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 223, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+.error {
+  text-algn: center;
+}
+
+/* line 227, /home/zfine/src/projects/dribble/app/assets/stylesheets/application.css.scss */
+.post_image {
+  padding-bottom: 1em;
+}
+
+/* line 1, /home/zfine/src/projects/dribble/app/assets/stylesheets/home.css.scss */
+#intro {
+  margin: 2.75rem 0 1.75rem 0;
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 1;
+}
+/* line 6, /home/zfine/src/projects/dribble/app/assets/stylesheets/home.css.scss */
+#intro span {
+  font-size: 1.25rem;
+  color: #9B9B9B;
+}
+
+/* line 12, /home/zfine/src/projects/dribble/app/assets/stylesheets/home.css.scss */
+#posts .post {
+  background: #F8F9FA;
+  width: 30%;
+  float: left;
+  margin: 1rem 1.5%;
+  border: 1px solid #E4E4E4;
+  border-radius: 0.3rem;
+}
+/* line 19, /home/zfine/src/projects/dribble/app/assets/stylesheets/home.css.scss */
+#posts .post .post_image {
+  height: 200px;
+  overflow: hidden;
+}
+/* line 22, /home/zfine/src/projects/dribble/app/assets/stylesheets/home.css.scss */
+#posts .post .post_image img {
+  width: 100%;
+  border-radius: .3rem .3rem 0 0;
+}
+/* line 28, /home/zfine/src/projects/dribble/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content h2 {
+  margin: 0;
+  font-weight: 100;
+  padding: 1rem 5%;
+  border-bottom: 1px solid #E4E4E4;
+  font-size: 1.25rem;
+}
+/* line 34, /home/zfine/src/projects/dribble/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content h2 a {
+  text-decoration: none;
+  color: #333233;
+}
+/* line 37, /home/zfine/src/projects/dribble/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content h2 a:hover {
+  color: #50A7C7;
+}
+/* line 42, /home/zfine/src/projects/dribble/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data {
+  padding: .75rem 5%;
+  color: #969696;
+}
+/* line 45, /home/zfine/src/projects/dribble/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .username, #posts .post .post_content .data .buttons {
+  margin: 0;
+  font-size: .8rem;
+}
+/* line 49, /home/zfine/src/projects/dribble/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .username {
+  float: left;
+}
+/* line 52, /home/zfine/src/projects/dribble/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .buttons {
+  float: right;
+}
+/* line 54, /home/zfine/src/projects/dribble/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .buttons span {
+  margin-left: .5rem;
+}
+
+/* line 1, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show {
+  padding-top: 2rem;
+}
+/* line 3, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show .post_image_description {
+  width: 50%;
+  float: left;
+  margin-right: 5%;
+}
+/* line 8, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show .post_data {
+  width: 15%;
+  float: left;
+}
+/* line 11, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show .post_data .button {
+  width: 100%;
+  display: inline-block;
+  padding: .75rem 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #969696;
+}
+/* line 19, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show .post_data .button:hover {
+  color: #50A7C7;
+  border: 1px solid #50A7C7;
+}
+/* line 24, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show .post_data .data {
+  width: 100%;
+  display: block;
+  padding: .75rem 0;
+  border-bottom: 1px solid #E9E9E9;
+  text-decoration: none;
+  color: #969696;
+  margin: 0;
+}
+/* line 34, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show #random_post {
+  width: 25%;
+  margin-left: 5%;
+  margin-top: -3.2rem;
+  float: left;
+}
+/* line 39, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show #random_post h3 {
+  font-size: 1rem;
+}
+/* line 42, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show #random_post .post {
+  background: #F8F9FA;
+  border: 1px solid #E4E4E4;
+  border-radius: 0.3rem;
+}
+/* line 46, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show #random_post .post .post_image {
+  height: 200px;
+  overflow: hidden;
+}
+/* line 49, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show #random_post .post .post_image img {
+  width: 100%;
+  border-radius: .3rem .3rem 0 0;
+}
+/* line 55, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show #random_post .post .post_content h2 {
+  margin: 0;
+  font-weight: 100;
+  padding: 1rem 5%;
+  border-bottom: 1px solid #E4E4E4;
+  font-size: 1.25rem;
+}
+/* line 61, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show #random_post .post .post_content h2 a {
+  text-decoration: none;
+  color: #333233;
+}
+/* line 64, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show #random_post .post .post_content h2 a:hover {
+  color: #50A7C7;
+}
+/* line 69, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show #random_post .post .post_content .data {
+  padding: .75rem 5%;
+  color: #969696;
+}
+/* line 72, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show #random_post .post .post_content .data .username, #post_show #random_post .post .post_content .data .buttons {
+  margin: 0;
+  font-size: .8rem;
+}
+/* line 76, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show #random_post .post .post_content .data .username {
+  float: left;
+}
+/* line 79, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show #random_post .post .post_content .data .buttons {
+  float: right;
+}
+/* line 81, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show #random_post .post .post_content .data .buttons span {
+  margin-left: .5rem;
+}
+/* line 89, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show h1 {
+  margin: 0;
+  color: #333233;
+}
+/* line 93, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show img {
+  width: 100%;
+  border-radius: .3rem;
+}
+/* line 97, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show .username {
+  color: #969696;
+  margin: 0 0 1.5rem 0;
+}
+/* line 101, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#post_show .description {
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #969696;
+}
+
+/* line 109, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#comments {
+  padding-bottom: 4rem;
+  width: 50%;
+}
+/* line 112, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#comments .comment_count {
+  border-bottom: 1px solid #E9E9E9;
+  padding-bottom: .5rem;
+  margin-bottom: 0;
+}
+/* line 117, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#comments .comment {
+  padding: 2rem 0;
+  border-bottom: 1px solid #E9E9E9;
+  padding-left: 5%;
+}
+/* line 121, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#comments .comment .username {
+  font-size: 1.3rem;
+  color: #333233;
+  margin: 0 0 .5rem 0;
+}
+/* line 126, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#comments .comment .content {
+  margin: 0;
+  color: #969696;
+}
+/* line 131, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#comments .comment_content {
+  margin-top: 2.5rem;
+}
+/* line 133, /home/zfine/src/projects/dribble/app/assets/stylesheets/posts.css.scss */
+#comments .comment_content textarea {
+  width: 100%;
+  margin: 1rem 0;
+  min-height: 150px;
+  border: 1px solid #E4E4E4;
+  background: #F8F9FA;
+  border-radius: 0.3rem;
+}

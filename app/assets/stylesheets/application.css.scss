@@ -227,5 +227,64 @@ input {
   padding-bottom: 1em;
 }
 
+/*-------------------------------------------*/
+/*-----Media Queries-----*/
+
+/*-----iphone6-----*/
+
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : landscape) 
+    and (-webkit-min-device-pixel-ratio : 2)
+{ 
+
+}
+
+@media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px) 
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 2)
+{ 
+header{
+  height: 200px;
+  position: relative;
+  #logo {
+    float: left;
+    font-size: 5em;
+    position: absolute;
+    top: calc(50% - 50px);
+    a {
+      color: $secondary;
+      text-decoration: none;
+      transition:  color 1s;
+      &:hover {
+        color: #FFF;
+      }
+    }
+  }
+  nav {
+    float: right;
+    font-size: 2em;
+    position: absolute;
+    right: 30px;
+    top: calc(50% - 32px);
+
+    a {
+      font-family: 'Hammersmith One', sans-serif;
+      margin-left: 1.5rem;
+      line-height: 2;
+      color: $secondary;
+      text-decoration: none;
+      transition:  color 1s;
+      &:hover {
+        color: #FFF;
+      }
+    }
+  }
+}
+}
+
 @import 'home.css.scss';
 @import 'posts.css.scss';

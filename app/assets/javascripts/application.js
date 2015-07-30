@@ -14,3 +14,15 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+// dropdown for sorting posts by time frame
+
+
+$( document ).ready(function() {
+    $('.sort ul').hide();
+});
+
+function dropdown(){
+	$('.sort ul').slideToggle();
+}

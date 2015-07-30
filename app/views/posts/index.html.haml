@@ -5,6 +5,18 @@
 		%br/
 		%span
 			Share your dog with the world and make someones day!
+		.sort
+			See the cutest dogs from 
+			%span{:onclick => "dropdown()"}
+				Today 
+				%i.fa.fa-caret-down
+			%ul
+				%li
+					= link_to "All Time",  posts_alltime_path
+				%li
+					= link_to "This Week",  posts_week_path
+				%li
+					= link_to "This Month",  posts_month_path
 - else
 	%p#intro
 		Dog photos that make you smile

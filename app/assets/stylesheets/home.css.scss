@@ -1,11 +1,15 @@
+$primary: #4DBD33;
+$secondary: #fff;
+
 #intro {
 	margin: 2.75rem 0 1.75rem 0;
 	text-align: center;
 	font-size: 1.75rem;
 	line-height: 1;
+	color: $primary;
 	span {
 		font-size: 1.25rem;
-		color: #9B9B9B;
+		color: $primary;
 	}
 }
 #posts {
@@ -22,6 +26,10 @@
 			img {
 				width: 100%;
 				border-radius: .3rem .3rem 0 0;
+				transition: all 5s ease-in-out;
+				&:hover{
+						transform: scale(1.1);
+					}
 			}
 		}
 		.post_content {
@@ -60,86 +68,118 @@
 	}
 }
 
+/*---------Image zoom--------------*/
+
+
+/*----------Sort photos--------*/
+.sort{
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+	position: relative;
+	background: rgba(77,189,51,.7);
+	color: white;
+	padding: 0 10px;
+	border-radius: 1em;
+	z-index: 1;
+
+}
+
+.sort ul{
+	position: absolute;
+	right: 10px;
+	background: rgba(77,189,51,.7);
+}
+.sort ul li{
+	list-style: none;
+	margin: 0 auto;
+}
+
+.sort ul li a{
+	text-decoration: none;
+	color: white;
+}
+
 /*-----Media Queries-----*/
 
 /*-----iphone6-----*/
 
 @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-width : 667px) 
-    and (orientation : landscape) 
-    and (-webkit-min-device-pixel-ratio : 2)
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) 
+and (-webkit-min-device-pixel-ratio : 2)
 { 
 
 }
 
 @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-width : 667px) 
-    and (orientation : portrait) 
-    and (-webkit-min-device-pixel-ratio : 2)
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) 
+and (-webkit-min-device-pixel-ratio : 2)
 { 
-#intro {
-	margin: 2.75rem 0 1.75rem 0;
-	text-align: center;
-	font-size: 5rem;
-	line-height: 1;
-	span {
-		font-size: 2.5rem;
-		color: #9B9B9B;
-	}
-}
-#posts {
-	.post {
-		background: #F8F9FA;
-		width: 90%;
-		float: left;
-		margin: 1rem 1.5%;
-		border: 1px solid #E4E4E4;
-		border-radius: 0.3rem;
-		.post_image {
-			height: 900px;
-			overflow: hidden;
-			display: inline;
-			img {
-				width: 100%;
-				border-radius: .3rem .3rem 0 0;
-			}
+	#intro {
+		margin: 2.75rem 0 1.75rem 0;
+		text-align: center;
+		font-size: 5rem;
+		line-height: 1;
+		span {
+			font-size: 2.5rem;
+			color: #9B9B9B;
 		}
-		.post_content {
-			h2 {
-				margin: 0;
-				font-weight: 100;
-				padding: 1rem 5%;
-				border-bottom: 1px solid #E4E4E4;
-				font-size: 3rem;
-				text-align: center;
-				a {
-					text-decoration: none;
-					color: #333233;
-					&:hover {
-						color: #50A7C7;
-					}
+	}
+	#posts {
+		.post {
+			background: #F8F9FA;
+			width: 90%;
+			float: left;
+			margin: 1rem 1.5%;
+			border: 1px solid #E4E4E4;
+			border-radius: 0.3rem;
+			.post_image {
+				height: 900px;
+				overflow: hidden;
+				display: inline;
+				img {
+					width: 100%;
+					border-radius: .3rem .3rem 0 0;
 				}
 			}
-			.data {
-				padding: .75rem 5%;
-				color: #969696;
-				.username, .buttons {
+			.post_content {
+				h2 {
 					margin: 0;
-					font-size: 2.5rem;
+					font-weight: 100;
+					padding: 1rem 5%;
+					border-bottom: 1px solid #E4E4E4;
+					font-size: 3rem;
+					text-align: center;
+					a {
+						text-decoration: none;
+						color: #333233;
+						&:hover {
+							color: #50A7C7;
+						}
+					}
 				}
-				.username {
-					float: left;
-				}
-				.buttons {
-					float: right;
-					span {
-						margin-left: .5rem;
+				.data {
+					padding: .75rem 5%;
+					color: #969696;
+					.username, .buttons {
+						margin: 0;
+						font-size: 2.5rem;
+					}
+					.username {
+						float: left;
+					}
+					.buttons {
+						float: right;
+						span {
+							margin-left: .5rem;
+						}
 					}
 				}
 			}
 		}
 	}
-}
 }

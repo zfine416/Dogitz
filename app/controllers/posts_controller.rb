@@ -7,7 +7,19 @@ class PostsController < ApplicationController
 		# @posts = Post.all.order("created_at DESC")
 		# binding.pry
 		# @post = Post.all.order(:cached_votes_up => :desc)
+		@posts = Post.all.where(created_at:(Time.now - 1.day)..Time.now)
+	end
+
+	def alltime
 		@posts = Post.all
+	end
+
+	def week
+		@posts = Post.all.where(created_at:(Time.now - 7.day)..Time.now)
+	end
+
+	def month
+		@posts = Post.all.where(created_at:(Time.now - 31.day)..Time.now)
 	end
 
 	def show

@@ -1,3 +1,6 @@
+$primary: #4DBD33;
+$secondary: #fff;
+
 #post_show {
 	padding-top: 2rem;
 	.post_image_description {
@@ -15,7 +18,8 @@
 			margin-bottom: 1rem;
 			text-align: center;
 			text-decoration: none;
-			color: #969696;
+			color: $primary;
+			border-color: $primary;
 			&:hover {
 				color: #50A7C7;
 				border: 1px solid #50A7C7;
@@ -27,7 +31,7 @@
 			padding: .75rem 0;
 			border-bottom: 1px solid #E9E9E9;
 			text-decoration: none;
-			color: #969696;
+			color: $primary;
 			margin: 0;
 		}
 	}

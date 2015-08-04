@@ -79,6 +79,25 @@ header {
 	}
 }
 
+
+/*---Sort-Dropdown---*/
+.sort-dropdown{
+  background: $primary;
+  display: inline-block;
+  position: absolute;
+  top: 99px;
+  right: 10%;
+  list-style: none;
+  text-align: center;
+  padding: 0 67px;
+  border-radius: 0 0px 5px 5px;
+  a{
+  color:#FFF;
+  text-decoration:none;
+  }
+}
+
+
 /*Form styling*/
 .sign-up {
   position: relative;

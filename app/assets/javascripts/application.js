@@ -36,3 +36,13 @@ $( document ).ready(function() {
 function dropdown(){
 	$('.sort ul').slideToggle();
 }
+
+$.ajax({
+	url:"/posts/open",
+	dataType: 'json',
+	success: function(data){
+		for(var i = 0; i<data.length; i++){
+			$('#post').append('<img src='+data[i].image_file_name+'>');
+		}
+	}
+})

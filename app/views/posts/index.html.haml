@@ -1,3 +1,4 @@
+
 - if user_signed_in?
 	%p#intro
 		Hello
@@ -5,18 +6,6 @@
 		%br/
 		%span
 			Share your dog with the world and make someones day!
-		.sort
-			See the cutest dogs from 
-			%span{:onclick => "dropdown()"}
-				Today 
-				%i.fa.fa-caret-down
-			%ul
-				%li
-					= link_to "All Time",  posts_alltime_path
-				%li
-					= link_to "This Week",  posts_week_path
-				%li
-					= link_to "This Month",  posts_month_path
 - else
 	%p#intro
 		Dog photos that make you smile
@@ -25,7 +14,7 @@
 			Log-in and post a photo of your puppy!!!
 #posts
 	- @posts.each do |post|
-		.post
+		.post[@post]
 			.post_image
 				= link_to (image_tag post.image.url(:small)), post
 			.post_content
@@ -37,7 +26,8 @@
 						= post.user.name
 					%p.buttons
 						%span
-							%i.fa.fa-comments-o
+						= link_to like_post_path(post), method: :get,class: "data" do
+							%i.fa.fa-thumbs-o-up
 							= post.comments.count
 						%span
 							%i.fa.fa-thumbs-o-up

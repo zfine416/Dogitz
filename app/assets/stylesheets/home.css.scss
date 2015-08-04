@@ -68,6 +68,7 @@ $secondary: #fff;
 	}
 }
 
+
 /*---------Image zoom--------------*/
 
 
@@ -98,6 +99,10 @@ $secondary: #fff;
 .sort ul li a{
 	text-decoration: none;
 	color: white;
+}
+
+.data{
+	text-decoration:none;
 }
 
 /*-----Media Queries-----*/
@@ -183,3 +188,5 @@ and (-webkit-min-device-pixel-ratio : 2)
 		}
 	}
 }
+
+

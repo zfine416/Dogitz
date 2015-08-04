@@ -3,12 +3,18 @@ class PostsController < ApplicationController
 	before_action :authenticate_user!, except: [:index, :show]
 	
 
-	def index
-		# @posts = Post.all.order("created_at DESC")
-		# binding.pry
-		# @post = Post.all.order(:cached_votes_up => :desc)
+	def index	
 		@posts = Post.all.where(created_at:(Time.now - 1.day)..Time.now)
 	end
+
+	def open
+		@posts = Post.all
+		respond_to do |format|
+			format.html { render text: "Please go to open.json" }
+			format.json { render json: @posts.to_json}
+		end
+	end
+
 
 	def alltime
 		@posts = Post.all

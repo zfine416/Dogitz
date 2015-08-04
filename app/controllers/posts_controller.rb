@@ -1,18 +1,10 @@
 class PostsController < ApplicationController
 	before_action :find_post, only: [:show, :edit, :update, :destroy, :upvote, :downvote]
-	before_action :authenticate_user!, except: [:index, :show]
+	before_action :authenticate_user!, except: [:index, :alltime, :week, :month, :show]
 	
 
 	def index	
 		@posts = Post.all.where(created_at:(Time.now - 1.day)..Time.now)
-	end
-
-	def open
-		@posts = Post.all
-		respond_to do |format|
-			format.html { render text: "Please go to open.json" }
-			format.json { render json: @posts.to_json}
-		end
 	end
 
 

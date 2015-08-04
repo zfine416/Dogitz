@@ -79,6 +79,12 @@ header {
 	}
 }
 
+nav span{
+  color:#FFF;
+  &:hover{
+    cursor:pointer;
+  }
+}
 
 /*---Sort-Dropdown---*/
 .sort-dropdown{
@@ -91,6 +97,7 @@ header {
   text-align: center;
   padding: 0 67px;
   border-radius: 0 0px 5px 5px;
+  display: none;
   a{
   color:#FFF;
   text-decoration:none;
@@ -267,43 +274,7 @@ input {
     and (orientation : portrait) 
     and (-webkit-min-device-pixel-ratio : 2)
 { 
-header{
-  height: 200px;
-  position: relative;
-  #logo {
-    float: left;
-    font-size: 5em;
-    position: absolute;
-    top: calc(50% - 50px);
-    a {
-      color: $secondary;
-      text-decoration: none;
-      transition:  color 1s;
-      &:hover {
-        color: #FFF;
-      }
-    }
-  }
-  nav {
-    float: right;
-    font-size: 2em;
-    position: absolute;
-    right: 30px;
-    top: calc(50% - 32px);
 
-    a {
-      font-family: 'Hammersmith One', sans-serif;
-      margin-left: 1.5rem;
-      line-height: 2;
-      color: $secondary;
-      text-decoration: none;
-      transition:  color 1s;
-      &:hover {
-        color: #FFF;
-      }
-    }
-  }
-}
 }
 
 @import 'home.css.scss';

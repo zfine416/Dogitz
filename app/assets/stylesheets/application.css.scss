@@ -2,11 +2,11 @@
  *= require_self
  */
 
-@import url(https://fonts.googleapis.com/css?family=Hammersmith+One);
-$primary: #FF9C00;
-$secondary: #fff;
+ @import url(https://fonts.googleapis.com/css?family=Hammersmith+One);
+ $primary: #FF9C00;
+ $secondary: #fff;
 
-*{
+ *{
   margin:0;
   padding:0;
   border:0;
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper {
 	/*width: 80%;*/
 /*	margin: 0 auto;
-  text-align:center;*/
+text-align:center;*/
 }
 
 .clearfix:before, .clearfix:after {
@@ -78,7 +78,9 @@ header {
 		}
 	}
 }
-
+.brand-logo{
+  left: 10px;
+}
 .nav-wrapper{
   background: #FF9C00;
 }
@@ -103,8 +105,8 @@ nav span{
   border-radius: 0 0px 5px 5px;
   display: none;
   a{
-  color:#FFF;
-  text-decoration:none;
+    color:#FFF;
+    text-decoration:none;
   }
 }
 
@@ -264,19 +266,19 @@ input {
 /*-----iphone6-----*/
 
 @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-width : 667px) 
-    and (orientation : landscape) 
-    and (-webkit-min-device-pixel-ratio : 2)
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) 
+and (-webkit-min-device-pixel-ratio : 2)
 { 
 
 }
 
 @media only screen 
-    and (min-device-width : 375px) 
-    and (max-device-width : 667px) 
-    and (orientation : portrait) 
-    and (-webkit-min-device-pixel-ratio : 2)
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) 
+and (-webkit-min-device-pixel-ratio : 2)
 { 
 
 }

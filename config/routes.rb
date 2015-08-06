@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/posts/week', to: 'posts#week'
   get '/posts/month', to: 'posts#month'
   get '/posts/open', to: 'posts#open'
+  # get '/posts/search', to: 'posts#search'
   resources :posts do
     member do
       get "like", to: "posts#upvote"

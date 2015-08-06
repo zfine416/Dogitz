@@ -3,7 +3,7 @@
  */
 
 @import url(https://fonts.googleapis.com/css?family=Hammersmith+One);
-$primary: #4DBD33;
+$primary: #FF9C00;
 $secondary: #fff;
 
 *{
@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
-	width: 80%;
+	/*width: 80%;*/
 	margin: 0 auto;
   text-align:center;
 }
@@ -77,6 +77,10 @@ header {
 			}
 		}
 	}
+}
+
+.nav-wrapper{
+  background: #FF9C00;
 }
 
 nav span{
@@ -279,3 +283,4 @@ input {
 
 @import 'home.css.scss';
 @import 'posts.css.scss';
+@import "materialize";

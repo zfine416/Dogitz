@@ -7,29 +7,53 @@
 	%link{:rel => "stylesheet", :href => "https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css"}
 	%link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"}
 	= csrf_meta_tags
-	
 %body
-	%header
-		.wrapper.clearfix
-			#logo= link_to "Dogitz", root_path
-			%nav
-				- if user_signed_in?
-					<span>Sort By</span>
-					= link_to current_user.name, edit_user_registration_path
-					= link_to "Add New Photo", new_post_path
-					= link_to "Sign Out", destroy_user_session_path, :method => :delete
-				- else
-					<span>Sort By</span>
-					= link_to "Sign in", new_user_session_path
-					= link_to "Sign Up", new_user_registration_path
-	%ul{:class => "sort-dropdown"} 
-		%li
-			= link_to "All Time",  posts_alltime_path
-		%li
-			= link_to "This Week",  posts_week_path
-		%li
-			= link_to "This Month",  posts_month_path
+	%nav
+		.nav-wrapper
+			- if user_signed_in?
+				%a.brand-logo{:href => "/"} Dogitz
+				%a.button-collapse{"data-activates" => "mobile-demo", :href => "#"}
+					%i.fa.fa-bars
+				%ul.right.hide-on-med-and-down
+					%li
+						%a{:href => "sass.html"} Sass
+					%li
+						%a{:href => "badges.html"} Components
+					%li
+						%a{:href => "collapsible.html"} Javascript
+					%li
+						%a{:href => "mobile.html"} Mobile
+				%ul#mobile-demo.side-nav
+					%li
+						%a{:href => "sass.html"} Sass
+					%li
+						%a{:href => "badges.html"} Components
+					%li
+						%a{:href => "collapsible.html"} Javascript
+					%li
+						%a{:href => "mobile.html"} Mobile
+			- else
+				%a.brand-logo{:href => "/"} Dogitz
+				%a.button-collapse{"data-activates" => "mobile-demo", :href => "#"}
+					%i.fa.fa-bars
+				%ul.right.hide-on-med-and-down
+					%li
+						%a{:href => "sass.html"} Sass
+					%li
+						%a{:href => "badges.html"} Components
+					%li
+						%a{:href => "collapsible.html"} Javascript
+					%li
+						%a{:href => "mobile.html"} Mobile
+				%ul#mobile-demo.side-nav
+					%li
+						%a{:href => "sass.html"} Sass
+					%li
+						%a{:href => "badges.html"} Components
+					%li
+						%a{:href => "collapsible.html"} Javascript
+					%li
+						%a{:href => "mobile.html"} Mobile
 	/ %p.notice= notice
 	/ %p.alert= alert
-	.wrapper
-		= yield
+	= yield

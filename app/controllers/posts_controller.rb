@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 	before_action :find_post, only: [:show, :edit, :update, :destroy, :upvote, :downvote]
-	before_action :authenticate_user!, except: [:index, :alltime, :week, :month, :show]
+	before_action :authenticate_user!, except: [:index, :alltime, :week, :month, :show, :search]
 	
 
 	def index	
@@ -25,6 +25,10 @@ class PostsController < ApplicationController
 		@comments = Comment.where(post_id: @post)
 		@random_post = Post.where.not(id: @post).order("RANDOM()").first
 	end
+
+	# def search
+	# 	binding.pry
+	# end
 
 	def new
 		@post = current_user.posts.build

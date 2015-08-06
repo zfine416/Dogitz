@@ -4,6 +4,37 @@
 ------Priorities --------
 *** Dont allow duplicate images to be posted
 
-*** Make mobile friendly (bootstrap?)
+Done
+
+*** Make mobile friendly (materialize)
 
 *** Add dog breed to photo upload form and sort
+
+= form_tag('/posts/search', :method => :get) do
+	= text_field_tag :time
+	= text_field_tag :breed 
+	= submit_tag 'submit'
+
+_______________________________________________
+
+%body
+	%header
+		.wrapper.clearfix
+			#logo= link_to "Dogitz", root_path
+			%nav
+				- if user_signed_in?
+					<span>Sort By</span>
+					= link_to current_user.name, edit_user_registration_path
+					= link_to "Add New Photo", new_post_path
+					= link_to "Sign Out", destroy_user_session_path, :method => :delete
+				- else
+					<span>Sort By</span>
+					= link_to "Sign in", new_user_session_path
+					= link_to "Sign Up", new_user_registration_path
+	%ul{:class => "sort-dropdown"} 
+		%li
+			= link_to "All Time",  posts_alltime_path
+		%li
+			= link_to "This Week",  posts_week_path
+		%li
+			= link_to "This Month",  posts_month_path

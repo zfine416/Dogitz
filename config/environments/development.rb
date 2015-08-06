@@ -17,13 +17,13 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp
-  ActionMailer::Base.smtp_settings = {
-                    :address        => "smtp.gmail.com",
-                    :port           => 587,
-                    :authentication => :plain,
-                    :user_name      => "finezachary1@gmail.com",
-                    :password       => "**********"
-}
+#   ActionMailer::Base.smtp_settings = {
+#                     :address        => "smtp.gmail.com",
+#                     :port           => 587,
+#                     :authentication => :plain,
+#                     :user_name      => "kelso.dogitz@gmail.com",
+#                     :password       => :password =>ENV['GPASSWORD']
+# }
   
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

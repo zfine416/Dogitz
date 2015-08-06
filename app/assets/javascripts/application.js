@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require materialize-sprockets
 //= require turbolinks
 //= require_tree .
 
@@ -33,6 +34,7 @@ $( document ).ready(function() {
 	$('nav span').on('click', function(){
 		$('.sort-dropdown').slideToggle();
 	})
+	$(".button-collapse").sideNav();
 });
 
 

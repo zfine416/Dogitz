@@ -23,8 +23,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrapper {
 	/*width: 80%;*/
-	margin: 0 auto;
-  text-align:center;
+/*	margin: 0 auto;
+  text-align:center;*/
 }
 
 .clearfix:before, .clearfix:after {
@@ -140,7 +140,6 @@ nav span{
 }
 
 .sign-up-title {
-  margin: -25px -25px 25px;
   padding: 15px 25px;
   line-height: 35px;
   font-size: 26px;
@@ -201,6 +200,7 @@ input {
 .sign-up-button {
   position: relative;
   vertical-align: top;
+  margin-bottom: 20px;
   width: 100%;
   height: 54px;
   padding: 0;

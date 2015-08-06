@@ -1,4 +1,5 @@
-<div class="sign-up">
+<div class="row">
+<div class="sign-up col m8 s8 l4 offset-s2 offset-m2 offset-l4">
 = simple_form_for @post do |f|
 	<h1 class="sign-up-title">Show off your Dog</h1>
 	=f.input :image
@@ -9,4 +10,5 @@
 	= f.input :description, label: false, :placeholder => "Description"
 	</div>
 	= f.submit :Upload!, :class => "sign-up-button"
+</div>
 </div>

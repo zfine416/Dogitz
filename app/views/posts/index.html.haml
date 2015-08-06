@@ -14,7 +14,7 @@
 			Sign-up and post and your furry friend could be the dog of the day
 #posts{:class => "row"}
 	- @posts.each do |post|
-		.post[@post]{:class => "col s12 m6 l4"}
+		.post[@post]{:class => "col s12 m12 l4"}
 			.post_image
 				= link_to (image_tag post.image.url(:small)), post
 			.post_content

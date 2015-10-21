@@ -21,5 +21,5 @@ Rails.application.routes.draw do
 
   
 
-  root 'posts#index'
+  root 'posts#alltime'
 end

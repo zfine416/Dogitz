@@ -8,9 +8,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  # def create
-  #   super
-  # end
+  def create
+    super
+    redirect edit_user_password_path
+  end
 
   # GET /resource/edit
   # def edit
